@@ -1,0 +1,142 @@
+:root{
+    /* ## Colors */
+
+    /* ### Primary */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    
+    /* ### Neutral */
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+
+    /* ### Fonts */
+    --Lexend-Deca400:'Lexend Deca';
+    --Big-Shoulders-Display700:'Big Shoulders Display';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    font-size: 15px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+
+    display: grid;
+    place-content: center;
+}
+
+.card{
+    width: 75.4rem;
+    height: 40.9rem;
+
+    border-radius: 0.6rem;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+
+}
+
+.cards{
+    width: 33.35%;
+    height: 100%;
+    margin: 0;
+    padding: 4.1rem;
+    color: var(--Transparent-white-paragraphs);
+}
+
+.leftside{
+    background-color: var(--Bright-orange);
+}
+
+.midside{
+    background-color: var(--Dark-cyan);
+}
+.rightside{
+    background-color: var(--Very-dark-cyan);
+}
+
+.icon{
+    width: 51px;
+    height: auto;
+}
+
+.title{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size:2.2em;
+}
+
+.paragraph{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8em;
+    line-height: 1.75em;
+    padding-bottom: 5.75rem;
+}
+
+.button{
+    padding: 1rem 2.3rem;
+    border-radius: 5rem;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    border: none;
+    font-family: var(--Lexend-Deca400);
+    text-align: center;
+    cursor:pointer;
+}
+
+.leftsideBu{
+    color: var(--Bright-orange);
+}
+.midsideBu{
+    color: var(--Dark-cyan);
+}
+.rightsideBu{
+    color: var(--Very-dark-cyan);
+}
+
+@media(max-width: 375px){
+    .card{ /*modi*/
+        width: 14.4rem;
+        height: 57.9rem;
+    
+        border-radius: 0.2rem;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .cards{/*modi*/
+        width: 100%;
+        height: 33.33%;
+        padding: 2.1rem;
+        box-sizing: border-box;
+        justify-content: left;/*que pedo*/
+    }
+
+    .icon{ /*modi*/
+        width: 27px;
+    }
+    
+    .title{ /*modi*/
+        font-size:1.8rem;
+    }
+    
+    .paragraph{/*modi*/
+        font-size: 0.65rem;
+        line-height: 1.58em;
+        padding-bottom: 0.5rem;
+    }
+
+    .button{/*modi*/
+        padding: 0.65rem 1.3rem;
+        font-size: 0.7rem;
+    }
+}
